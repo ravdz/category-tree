@@ -251,7 +251,6 @@ export const CORRECT = [
             showOnHome: false,
             id: 9310,
             name: 'Inne preparaty',
-
             order: 9310,
           },
           {
