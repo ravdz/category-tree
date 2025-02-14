@@ -49,7 +49,7 @@ export const categoryTree = async (
       .map((category) => {
         const { id, MetaTagDescription, name, Title, children } = category;
         const order = getOrderNumber(category);
-        // is this a firstLevel and is title contains number with "#"" symbol at the beginning
+        // is this a firstLevel and is title contains number with "#" symbol at the beginning
         if (currentLevel === 0 && /^(\d+)#/.test(Title)) toShowOnHome.push(id);
         const processedChildren = processCategories(children, currentLevel + 1);
         return {
